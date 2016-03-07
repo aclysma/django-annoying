@@ -85,7 +85,7 @@ if SOUTH:
         ["^annoying\.fields\.AutoOneToOneField"])
 
 
-class JSONField(six.with_metaclass(models.SubfieldBase, models.TextField)):
+class JSONField(models.TextField):
     """
     JSONField is a generic textfield that neatly serializes/unserializes
     JSON objects seamlessly.
